@@ -9,5 +9,5 @@
  * Until then this page doesn't read `params`, so it stays a static shell.
  */
 export default function BlogArticlePage() {
-  return null;
+  return null
 }

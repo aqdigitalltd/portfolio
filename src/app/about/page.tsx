@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "About",
   alternates: {
     canonical: "/about",
   },
-};
+}
 
 export default function AboutPage() {
-  return null;
+  return null
 }

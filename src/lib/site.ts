@@ -1,3 +1,3 @@
-export const siteUrl = "https://ibrahimaq.com";
+export const siteUrl = "https://ibrahimaq.com"
 
-export const siteName = "Ibrahim";
+export const siteName = "Ibrahim"
