@@ -12,20 +12,23 @@ export default function StyleGuide() {
       <section aria-labelledby="buttons-heading" className="mt-16">
         <h2 className="text-2xl font-semibold">Buttons</h2>
         <div className="mt-6">
-          <div className="mt-5 flex flex-col gap-2">
+          <div className="mt-5 flex flex-col gap-4">
             <div>
               <p className="pb-1">Primary</p>
-              <Button size="large" variant="primary">
-                Primary
-              </Button>
+              <div className="flex gap-4">
+              <Button size="large" variant="primary" label="deafult"/>
+             <Button size="large" variant="primary" label="disabled" disabled/>
+                
+             
+            </div>
             </div>
             <div>
               <p className="pb-1">Secondary</p>
-
-              <Button size="large" variant="secondary">
-                Secondary
-              </Button>
+              <div className="flex gap-4">
+              <Button size="large" variant="secondary" label="deafult1"/>
+              <Button size="large" variant="secondary" label="disabled1"/>
             </div>
+          </div>
           </div>
         </div>
       </section>
