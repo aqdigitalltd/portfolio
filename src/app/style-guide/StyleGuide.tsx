@@ -6,7 +6,7 @@ export default function StyleGuide() {
   return (
     <div className="mx-auto max-w-site p-8">
       <h1 className="text-section font-semibold tracking-display">
-        Style guide
+        Style guide lives here
       </h1>
 
       <section aria-labelledby="buttons-heading" className="mt-16">
