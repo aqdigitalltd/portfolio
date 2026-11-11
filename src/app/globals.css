@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/*
+ * Tailwind's default theme, plus the two brand colours and the font.
+ * Use Tailwind's own classes for everything else (neutral-*, text-*, etc.).
+ */
+@theme {
+  /* Primary (purple): anything clickable. Same values as Tailwind's indigo. */
+  --color-primary-50: var(--color-indigo-50);
+  --color-primary-100: var(--color-indigo-100);
+  --color-primary-200: var(--color-indigo-200);
+  --color-primary-300: var(--color-indigo-300);
+  --color-primary-400: var(--color-indigo-400);
+  --color-primary-500: var(--color-indigo-500);
+  --color-primary-600: var(--color-indigo-600);
+  --color-primary-700: var(--color-indigo-700);
+  --color-primary-800: var(--color-indigo-800);
+  --color-primary-900: var(--color-indigo-900);
+  --color-primary-950: var(--color-indigo-950);
+
+  /* Secondary (mint): decoration only, never clickable */
+  --color-secondary-100: oklch(95.5% 0.035 168);
+  --color-secondary-400: oklch(80% 0.13 168);
+  --color-secondary-800: oklch(44% 0.085 178);
+  --color-secondary-950: oklch(24% 0.05 178);
+
+  /* --font-albert-sans is set on <html> by next/font (layout.tsx) */
+  --font-sans: var(--font-albert-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-primary-600);
+    outline-offset: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
