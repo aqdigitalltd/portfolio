@@ -26,7 +26,8 @@ export default function StyleGuide() {
               <p className="pb-1">Secondary</p>
               <div className="flex gap-4">
               <Button size="large" variant="secondary" label="deafult1"/>
-              <Button size="large" variant="secondary" label="disabled1"/>
+             <Button size="large" variant="secondary" label="disabled1" disabled/>
+              
             </div>
           </div>
           </div>
