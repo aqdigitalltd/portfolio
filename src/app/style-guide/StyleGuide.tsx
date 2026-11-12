@@ -1,6 +1,7 @@
 "use client"
 
 import Button from "@/components/Button"
+import Tag from "@/components/tag"
 
 export default function StyleGuide() {
   return (
@@ -16,7 +17,7 @@ export default function StyleGuide() {
             <div>
               <p className="pb-1">Primary</p>
               <div className="flex gap-4">
-              <Button size="large" variant="primary" label="deafult"/>
+              <Button size="large" variant="primary" label="deafult" />
              <Button size="large" variant="primary" label="disabled" disabled/>
                 
              
@@ -33,6 +34,26 @@ export default function StyleGuide() {
           </div>
         </div>
       </section>
+         <section aria-labelledby="tags-heading">
+        <h2 className="text-base font-semibold">Tags</h2>
+        <div className="labelName flex-wrap border border-solid border-black inline-flex gap-2 max-w-2xs ">
+       <Tag label="React"/>
+       <Tag label="Next.js"/>
+       <Tag label="TypeScript"/>
+       <Tag label="Git"/>
+       <Tag label="GitHub"/>
+       <Tag label="JavaScript"/>
+       <Tag label="HTML"/>
+       <Tag label="CSS"/>
+       <Tag label="Java"/>
+       <Tag label="Python"/>
+
+  </div>
+</section>
+
+      
     </div>
   )
+  
 }
+
