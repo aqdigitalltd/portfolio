@@ -22,12 +22,11 @@ const SIZE: Record<Size, string> = {
 }
 
 
-const Button = ({ variant, size, label, ...rest }: IButton) => {
+const Button = ({ variant, size, label,...rest }: IButton) => {
   return (
     <button
       {...rest}
-      className={`enabled:cursor-pointer ${VARIANT[variant]} ${SIZE[size]}`}
-    >
+      className={`cursor-pointer disabled:cursor-default ${VARIANT[variant]} ${SIZE[size]}`} >
       {label}
     </button>
   )
