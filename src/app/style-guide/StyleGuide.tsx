@@ -1,9 +1,21 @@
 "use client"
-
 import Button from "@/components/Button"
 import Tag from "@/components/tag"
 
 export default function StyleGuide() {
+  const tags = [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'Git',
+    'GitHub',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'Java',
+    'Python',
+  ]
+
   return (
     <div className="mx-auto max-w-site p-8">
       <h1 className="text-section font-semibold tracking-display">
@@ -41,26 +53,17 @@ export default function StyleGuide() {
           </div>
         </div>
       </section>
-         <section aria-labelledby="tags-heading">
+
+      <section aria-labelledby="tags-heading">
         <h2 className="text-base font-semibold">Tags</h2>
         <div className="labelName flex-wrap border border-solid border-black inline-flex gap-2 max-w-2xs ">
-       <Tag label="React"/>
-       <Tag label="Next.js"/>
-       <Tag label="TypeScript"/>
-       <Tag label="Git"/>
-       <Tag label="GitHub"/>
-       <Tag label="JavaScript"/>
-       <Tag label="HTML"/>
-       <Tag label="CSS"/>
-       <Tag label="Java"/>
-       <Tag label="Python"/>
-
-  </div>
-</section>
-
-      
+         {tags.map(label => (
+       <Tag key={label} label={label} />
+          )
+        )
+          }
+        </div>
+      </section>
     </div>
   )
-  
 }
-
