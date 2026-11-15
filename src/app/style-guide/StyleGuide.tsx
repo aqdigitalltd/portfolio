@@ -17,20 +17,27 @@ export default function StyleGuide() {
             <div>
               <p className="pb-1">Primary</p>
               <div className="flex gap-4">
-              <Button size="large" variant="primary" label="deafult" />
-             <Button size="large" variant="primary" label="disabled" disabled/>
-                
-             
-            </div>
+                <Button size="large" variant="primary" label="deafult" />
+                <Button
+                  size="large"
+                  variant="primary"
+                  label="disabled"
+                  disabled
+                />
+              </div>
             </div>
             <div>
               <p className="pb-1">Secondary</p>
               <div className="flex gap-4">
-              <Button size="large" variant="secondary" label="deafult1"/>
-             <Button size="large" variant="secondary" label="disabled1" disabled/>
-              
+                <Button size="large" variant="secondary" label="deafult1" />
+                <Button
+                  size="large"
+                  variant="secondary"
+                  label="disabled1"
+                  disabled
+                />
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>

@@ -9,7 +9,6 @@ interface IButton extends ComponentProps<"button"> {
   label: string
 }
 
-
 const VARIANT: Record<Variant, string> = {
 
   primary: "border rounded-sm border-primary-600 text-base font-semibold bg-primary-600 text-white enabled:hover:bg-primary-700 enabled:hover:border-primary-700 active:bg-primary-700 active:border focus-visible:bg-primary-600 disabled:opacity-55 disabled:hover:bg-primary-600 disabled:hover:border-primary-600",
@@ -21,14 +20,14 @@ const SIZE: Record<Size, string> = {
   large: "px-10 h-13",
 }
 
-
-const Button = ({ variant, size, label,...rest }: IButton) => {
+const Button = ({ variant, size, label, ...rest }: IButton) => {
   return (
-    <button {...rest} className={`${VARIANT[variant]} ${SIZE[size]}`}>
+    <button
+      {...rest}
+      className={`cursor-pointer disabled:cursor-default ${VARIANT[variant]} ${SIZE[size]}`}
+    >
       {label}
     </button>
   )
 }
 export default Button
-
-
