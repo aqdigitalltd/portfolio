@@ -1,4 +1,3 @@
-
 import { ComponentProps } from "react"
 
 type Variant = "primary" | "secondary"
