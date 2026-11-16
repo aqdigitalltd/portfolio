@@ -56,7 +56,7 @@ export default function StyleGuide() {
 
       <section aria-labelledby="tags-heading">
         <h2 className="text-base font-semibold">Tags</h2>
-        <div className="labelName flex-wrap border border-solid border-black inline-flex gap-2 max-w-2xs ">
+        <div className="flex-wrap border border-solid border-black inline-flex gap-2 max-w-2xs ">
          {tags.map(label => (
        <Tag key={label} label={label} />
           )
