@@ -1,6 +1,7 @@
 "use client"
 import Button from "@/components/Button"
 import Tag from "@/components/tag"
+import ServiceCard from "@/components/ServiceCard"
 
 export default function StyleGuide() {
   const tags = [
@@ -24,6 +25,7 @@ export default function StyleGuide() {
 
       <section aria-labelledby="buttons-heading" className="mt-16">
         <h2 className="text-2xl font-semibold">Buttons</h2>
+
         <div className="mt-6">
           <div className="mt-5 flex flex-col gap-4">
             <div>
@@ -38,6 +40,7 @@ export default function StyleGuide() {
                 />
               </div>
             </div>
+
             <div>
               <p className="pb-1">Secondary</p>
               <div className="flex gap-4">
@@ -56,12 +59,21 @@ export default function StyleGuide() {
 
       <section aria-labelledby="tags-heading">
         <h2 className="text-base font-semibold">Tags</h2>
-        <div className="flex-wrap border border-solid border-black inline-flex gap-2 max-w-2xs ">
-         {tags.map(label => (
-       <Tag key={label} label={label} />
-          )
-        )
-          }
+
+        <div className="flex-wrap border border-solid border-black inline-flex gap-2 max-w-2xs">
+          {tags.map(label => (
+            <Tag key={label} label={label} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <h2 className="text-2xl font-semibold">Services</h2>
+        <div className="mt-6">
+          <ServiceCard
+            title="Web Development"
+            body="Building modern and responsive websites."
+          />
         </div>
       </section>
     </div>
